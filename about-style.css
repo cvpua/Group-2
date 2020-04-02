@@ -63,7 +63,7 @@ body{
 .quote{
     grid-column: 1 / 8;
     grid-row: 7 / 8;
-	background: #08C6AB;
+	background: #726EFF;
 	text-align: center;
 }
 .name{
@@ -81,7 +81,7 @@ h2{
 .titlebday{
 	grid-column: 8 / 9;
 	grid-row: 2/3;
-	background: #08C6AB;
+	background: #726EFF;
 	border-right: black solid 1px;
 }
 
@@ -95,7 +95,7 @@ h2{
 .titlebatch{
 	grid-column: 8 / 9;
 	grid-row: 4/5;
-	background: #08C6AB;
+	background: #726EFF;
 	border-right: black solid 1px;
 }
 
@@ -109,7 +109,7 @@ h2{
 .titleinterest{
 	grid-column: 8 / 9;
 	grid-row: 6/7;
-	background: #08C6AB;
+	background: #726EFF;
 	border-right: black solid 1px;
 }
 
@@ -123,7 +123,7 @@ h2{
 .bday{
 	grid-column: 9 / 13;
 	grid-row: 2/3;
-	background: #08C6AB;
+	background: #726EFF;
 }
 
 .hometown{
@@ -135,7 +135,7 @@ h2{
 .batch{
 	grid-column: 9 / 13;
 	grid-row: 4/5;
-	background: #08C6AB;
+	background: #726EFF;
 }
 
 .batchorg{
@@ -147,7 +147,7 @@ h2{
 .interest{
 	grid-column: 9 / 13;
 	grid-row: 6/7;
-	background: #08C6AB;
+	background: #726EFF;
 }
 
 .hobby{
