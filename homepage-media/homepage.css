@@ -1,0 +1,95 @@
+:root {
+    font-size: 14px;
+    --violeta: #6E72FB;
+    --mint: #6BFFE8;
+    --dark-mint: #30C7AC;
+    --dark: #37475A;
+    --dark-base: #212B37;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--dark-mint);
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+}
+
+.bg-media {
+    height: 100%;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-mint);
+}
+
+a:hover {
+    color: var(--mint);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.nav-item {
+    padding: 1rem;
+    margin-left: 0.25rem;
+}
+
+.item5 {
+    margin-right: 30px;
+}
+
+.logo {
+    padding-left: 100px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.media1 {
+    padding-top: 10rem;
+    max-width: 500px;
+    width: 100px;
+    flex-grow: 1;
+}
+
+.contents {
+    padding-right: 5rem;
+}
+
+.greetings {
+    color: var(--violeta);
+    font-size: 5rem;
+}
+
+.description {
+    font-family: var(--secondary-font);
+    width: 25rem;
+}
