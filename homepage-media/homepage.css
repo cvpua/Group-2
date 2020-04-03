@@ -17,6 +17,7 @@
 
 html {
     min-width: 1400px;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
