@@ -37,23 +37,26 @@ body{
 	font-size: 20px;
 }
 
+#members{
+	width: 100%;
+}
+
 #container{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(7,1fr);
-	max-width: 45%;
-	margin:auto;
+	max-width: 600px;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-bottom: 20px;
+	padding-left: 140px;
 	float: left;
-	height: 500px;
+	max-height: 500px;
 }
 
 #container div{
 	padding: 10px;
 }
+
 .picture{
     grid-column: 1 / 8;
     grid-row: 1 / 7;
