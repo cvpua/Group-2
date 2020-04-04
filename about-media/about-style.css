@@ -1,3 +1,14 @@
+:root {
+    font-size: 14px;
+    --violeta: #6E72FB;
+    --mint: #6BFFE8;
+    --dark-mint: #30C7AC;
+    --dark: #37475A;
+    --dark-base: #212B37;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
 body{
 	background-color: #37465B;
 	color: #FFF;
@@ -12,7 +23,7 @@ body{
 	text-align: center;
 	height: 200px;
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 }
 
@@ -22,6 +33,29 @@ body{
 	overflow: hidden;
 	text-align: right;
 }
+
+
+a {
+    text-decoration: none;
+    color: var(--dark-mint);
+}
+
+a:hover {
+    color: var(--mint);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.nav-item {
+    padding: 1rem;
+    margin-left: 0.25rem;
+}
+
 
 .headline{
 	margin-top: 50px;
@@ -45,12 +79,12 @@ body{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(7,1fr);
-	max-width: 600px;
+	width: 45%;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	padding-left: 140px;
+	padding-left: 50px;
 	float: left;
-	max-height: 500px;
+	height: 500px;
 }
 
 #container div{
