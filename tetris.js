@@ -1,5 +1,6 @@
 /**
  * This game was developed by a llama :D
+ * A lot of this is still messy! I'll update it in the repo in my own gh
  * Audio effects from https://gamebanana.com/sounds/download/44751
  */
 
@@ -287,12 +288,18 @@ const draw = () => {
 
 // Game over
 const gameOver = () => {
+  theme.pause();
   window.alert("Game over!");
+  theme.play();
   stage.arr.forEach(row => row.fill(0));
   t.x = 100;
   t.y = 0;
   t.newShape();
   stage.score = 0;
+  gamePaused = false;
+  document.querySelector("#gamePaused").innerHTML = gamePaused
+    ? "GAME PAUSED"
+    : "LET'S PLAY";
 };
 
 // Game timer
@@ -326,7 +333,9 @@ const update = (time = 0) => {
       }
 
       // Game over if there's nowhere to spawn
-      if (collidesWith(stage, t)) gameOver();
+      if (collidesWith(stage, t)) {
+        gameOver();
+      }
     }
     dropCounter = 0;
     if (gamePaused) {
