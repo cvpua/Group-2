@@ -1,14 +1,63 @@
-<!DOCTYPE html>
 <html>
-
-	<head>
-
-		<title>Random Webpage</title>
-
-	</head>	
-	
-	<body>
-		
-	</body>
-
+  <head>
+    <title>Let's play Tetris!</title>
+    <link rel="stylesheet" href="tetris.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Press+Start+2P"
+    />
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-item item1">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item item2">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item item3">
+          <a href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item item4">
+          <a href="intro.html">Project</a>
+        </li>
+        <li class="nav-item item5">
+          <a href="random.html" id="featured-nav-item">Featured</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="info-container">
+        <h3>HOW TO PLAY</h3>
+        <p>Use the <b>arrow keys</b> to move the tetromino around.</p>
+        <p>Press <b>space</b> to drop the piece.</p>
+        <p>Press <b>shift</b> to rotate the piece.</p>
+        <p>Press <b>F2</b> to pause or unpause.</p>
+        <p>Press <b>F4</b> to restart.</p>
+        <p>
+          The goal is simply to <b>fill and clear rows on the stage</b>— as many
+          as you can.
+        </p>
+      </div>
+      <div class="game-container">
+        <canvas id="game" width="240" height="400"></canvas>
+      </div>
+      <div class="stats-container">
+        <div class="stats-box"><p id="gamePaused">GAME PAUSED</p></div>
+        <div class="stats-box"><p id="gameScore">0</p></div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        This game was developed by a
+        <a href="https://github.com/bobschiffer"><u>llama</u></a
+        >! SFX from
+        <a href="https://gamebanana.com/sounds/download/44751"
+          ><u>gamebanana</u></a
+        >, under a CC license. Turn on your browser audio so you can hear it.
+      </p>
+    </footer>
+  </body>
+  <script src="tetris.js"></script>
 </html>
